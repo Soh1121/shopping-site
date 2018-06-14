@@ -15,3 +15,64 @@ $beige: #e2ddd4;
 $gray: #b0b0b0;
 $red: #9d1a2d;
 $background: #f9f8f6;
+
+header {
+    background: $background;
+    
+    #header_in {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+        .row {
+            position: relative;
+            .pc_navi {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                img {
+                    padding: 0 5px;
+                }
+            }
+        
+            .sp {
+                display: none;
+            }
+        
+            .sp_navi {
+                @extend .sp;
+            }
+        }
+    }
+    
+    @media (max-width: 320px) {
+        #header_in {
+            
+            .row {
+                .pc {
+                    display: none;
+                }
+        
+                .pc_navi {
+                    display: none;
+                }
+        
+                .sp {
+                    display: block;
+                    margin: 0 auto;
+                }
+        
+                .sp_navi {
+                    display: block;
+                    text-align: center;
+                    padding-top: 10px;
+                
+                    img {
+                        padding: 0 5px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
