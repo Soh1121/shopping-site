@@ -16,9 +16,12 @@ $gray: #b0b0b0;
 $red: #9d1a2d;
 $background: #f9f8f6;
 
-header {
+body {
     background: $background;
-    
+}
+// body
+
+header {
     #header_in {
         padding-top: 20px;
         padding-bottom: 10px;
@@ -33,17 +36,23 @@ header {
                 img {
                     padding: 0 5px;
                 }
+                // img
             }
+            // .pc_navi
         
             .sp {
                 display: none;
             }
+            // .sp
         
             .sp_navi {
                 @extend .sp;
             }
+            // .sp_navi
         }
+        // .row
     }
+    // #header_in
     
     @media (max-width: 320px) {
         #header_in {
@@ -52,15 +61,18 @@ header {
                 .pc {
                     display: none;
                 }
+                // .pc
         
                 .pc_navi {
                     display: none;
                 }
+                // .pc_navi
         
                 .sp {
                     display: block;
                     margin: 0 auto;
                 }
+                // .sp
         
                 .sp_navi {
                     display: block;
@@ -70,9 +82,59 @@ header {
                     img {
                         padding: 0 5px;
                     }
+                    // img
                 }
-                
+                // .sp_navi
             }
+            // .row
+        }
+        // #header_in
+    }
+    // @media (max-width: 320px)
+}
+// header
+
+.container {
+    // padding-top: 20px;
+    
+    .row {
+        #main {
+            .owl-theme {
+                .owl-dots {
+                    margin-top: 0;
+                    text-align: left;
+                    
+                    .owl-dot {
+                        span {
+                            width: 25px;
+                            height: 2px;
+                            border-radius: 0;
+                            margin: 0px 10px 5px 0px;
+                        }
+                        // span
+                    }
+                    // .owl-dot
+                    
+                    .active {
+                        span {
+                            background: $red;
+                        }
+                        // span
+                    }
+                    // .active
+                }
+                // .owl-dots
+            }
+            // .owl-theme
+        }
+        // #main
+    }
+    // .row
+    
+    @media (min-width: 321px) {
+        .row {
+            padding-top: 20px;
         }
     }
+    // @media (min-width: 321px)
 }
