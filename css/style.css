@@ -3,6 +3,17 @@ html {
 
 body {
   background: #f9f8f6; }
+  body p {
+    font-size: 11px;
+    font-size: 1.1rem; }
+  body .sp, body .sp_navi {
+    display: none; }
+  @media (max-width: 640px) {
+    body .pc {
+      display: none; }
+    body .sp, body .sp_navi {
+      display: block;
+      margin: 0 auto; } }
 
 header #header_in {
   padding-top: 20px;
@@ -40,21 +51,46 @@ header #header_in {
 .container .row #main .title {
   text-align: center;
   padding-bottom: 15px; }
+.container .row #main .item-box {
+  background-color: white;
+  padding: 8px;
+  margin-top: 3px; }
 .container .row #main table {
   table-layout: auto;
   margin-bottom: 20px; }
   .container .row #main table tbody td {
     border: none;
     padding: 0 3px 3px 0; }
-    .container .row #main table tbody td .item-box {
-      background-color: white;
-      padding: 8px 8px 8px 8px; }
-      .container .row #main table tbody td .item-box .center {
-        text-align: center; }
-      .container .row #main table tbody td .item-box img {
-        width: 100%; }
-      .container .row #main table tbody td .item-box p {
-        margin: 5px 0; }
+    .container .row #main table tbody td .center {
+      text-align: center; }
+    .container .row #main table tbody td img {
+      width: 100%; }
+    .container .row #main table tbody td p {
+      margin: 5px 0; }
+  .container .row #main table h3 {
+    font-size: 16px;
+    font-size: 1.6rem; }
+.container .row #main #shopping_guide h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #887f69;
+  margin: 10px; }
+.container .row #main #shopping_guide h4 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #887f69;
+  margin: 0 0 0 10px; }
+  .container .row #main #shopping_guide h4 span {
+    font-size: 20px;
+    font-size: 2rem; }
+.container .row #main #shopping_guide p {
+  margin: 0 0 5px 10px; }
+.container .row #main #shopping_guide .item-box img {
+  margin: 5px 0 0 10px;
+  max-width: 90%;
+  height: auto; }
 @media (min-width: 641px) {
   .container .row #main {
     padding-top: 20px; }
@@ -63,19 +99,5 @@ header #header_in {
       font-size: 1.2rem; }
   .container .row #side_bar {
     padding-top: 20px; } }
-
-.sp, .sp_navi {
-  display: none; }
-  .sp p, .sp_navi p {
-    font-size: 11px;
-    font-size: 1.1rem; }
-
-@media (max-width: 640px) {
-  .pc {
-    display: none; }
-
-  .sp, .sp_navi {
-    display: block;
-    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
