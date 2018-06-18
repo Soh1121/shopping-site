@@ -106,7 +106,7 @@ header #header_in {
       position: absolute;
       left: 0;
       top: 0;
-      width: 240px;
+      width: 100%;
       border: none;
       background-color: #eeeeee; }
       .container .row #sidebar #serch .sp #search-index #input:-moz-placeholder, .container .row #sidebar #serch body .sp_navi #search-index #input:-moz-placeholder, body .container .row #sidebar #serch .sp_navi #search-index #input:-moz-placeholder {
@@ -120,7 +120,7 @@ header #header_in {
     .container .row #sidebar #serch .sp #search-index #submit, .container .row #sidebar #serch body .sp_navi #search-index #submit, body .container .row #sidebar #serch .sp_navi #search-index #submit {
       height: 30px;
       position: absolute;
-      left: 190px;
+      right: -10px;
       border: none;
       background-image: url(../images/top/search_icon.png);
       background-position: center;
@@ -134,7 +134,7 @@ header #header_in {
     position: absolute;
     left: 0;
     top: 0;
-    width: 170px;
+    width: 100%;
     border: none;
     background-color: #eeeeee; }
     .container .row #sidebar #serch .pc #search-index #input:-moz-placeholder {
@@ -148,7 +148,7 @@ header #header_in {
   .container .row #sidebar #serch .pc #search-index #submit {
     height: 30px;
     position: absolute;
-    left: 120px;
+    right: -10px;
     border: none;
     background-image: url(../images/top/search_icon.png);
     background-position: center;
