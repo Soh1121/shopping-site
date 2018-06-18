@@ -227,7 +227,11 @@ header {
         // #main
         
         #sidebar {
-            #serch {
+            a {
+                text-decoration: none;
+            }
+            
+            #search {
                 img {
                     padding-left: 10px;
                 }
@@ -305,6 +309,56 @@ header {
                     }
                 }
             }
+            
+            #side_contents {
+                margin-top: 10px;
+                position: relative;
+                
+                h3 {
+                    @include fontsize(12);
+                    color: white;
+                    font-weight: bold;
+                    letter-spacing: 0.05em;
+                    background-color: $brown;
+                    
+                    padding: 15px 10px;
+                    margin: 0;
+                }
+                // h3
+                
+                img {
+                    display: block;
+                    position: absolute;
+                    
+                    top: 15.5px;
+                    right: 10px;
+                }
+                // img
+                
+                li {
+                    @include fontsize(12);
+                    list-style: none;
+                    border-bottom: 2px solid $background;
+                    margin: 0;
+                    padding-left: 10px;
+                    background-color: white;
+                    height: 45px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    
+                    img {
+                        display: inline-block;
+                        position: absolute;
+                        right: 10px;
+                    }
+                    
+                    a {
+                        color: black;
+                    }
+                }
+            }
+            // #page_link
         }
         // #side_bar
     }
@@ -323,6 +377,12 @@ header {
             
             #sidebar {
                 padding-top: 20px;
+                
+                #search {
+                    .item-box {
+                        padding: 10px 20px 20px 20px;
+                    }
+                }
             }
             // #side_bar
         }
