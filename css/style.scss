@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "compass";
+
 html {
     font-size: 62.5%;
 }
@@ -22,6 +24,14 @@ body {
     p {
         @include fontsize(11);
     }
+    // p
+    
+    .item-box {
+        background-color: white;
+        padding: 8px;
+        margin-top: 3px;
+    }
+    // .item-box
     
     .sp {
         display: none;
@@ -139,13 +149,6 @@ header {
             }
             // .title
             
-            .item-box {
-                background-color: white;
-                padding: 8px;
-                margin-top: 3px;
-            }
-            // .item-box
-            
             table {
                 table-layout: auto;
                 margin-bottom: 20px;
@@ -186,9 +189,9 @@ header {
                     @include fontsize(16);
                     font-weight: bold;
                     color: $brown;
-                
                     margin: 10px;
                 }
+                // h3
 
                 h4 {
                     @include fontsize(12);
@@ -199,11 +202,14 @@ header {
                     span {
                         @include fontsize(20);
                     }
+                    // span
                 }
+                // h4
                 
                 p {
                     margin: 0 0 5px 10px;
                 }
+                // p
 
                 .item-box{
                     img {
@@ -211,11 +217,96 @@ header {
                         max-width: 90%;
                         height: auto;
                     }
+                    // img
                 }
+                // .item-box
             }
+            // #shopping_guide
             
         }
         // #main
+        
+        #sidebar {
+            #serch {
+                img {
+                    padding-left: 10px;
+                }
+                
+                .item-box {
+                    padding: 20px;
+                }
+                
+                .sp {
+                    margin-top: 10px;
+                    padding: 20px 20px 25px 20px;
+                    
+                    #search-index {
+                        position: relative;
+                    
+                    
+                        #input {
+                            height: 30px;
+                            padding: 0 10px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 240px;
+                            border: none;
+                            background-color: #eeeeee;
+                    
+                            @include input-placeholder {
+                                color: #b5b5b5;
+                            }
+                        }
+                    
+                        #submit {
+                            height: 30px;
+                            position: absolute;
+                            left: 190px;
+                            border: none;
+                            background-image: url(../images/top/search_icon.png);
+                            background-position: center;
+                            background-size: 16px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                // .sp
+                
+                .pc {
+                    #search-index {
+                        position: relative;
+                    
+                        #input {
+                            height: 30px;
+                            padding: 0 10px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 170px;
+                            border: none;
+                            background-color: #eeeeee;
+                    
+                            @include input-placeholder {
+                                color: #b5b5b5;
+                            }
+                        }
+                    
+                        #submit {
+                            height: 30px;
+                            position: absolute;
+                            left: 120px;
+                            border: none;
+                            background-image: url(../images/top/search_icon.png);
+                            background-position: center;
+                            background-size: 16px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        // #side_bar
     }
     // .row
     
@@ -230,7 +321,7 @@ header {
             }
             // #main
             
-            #side_bar {
+            #sidebar {
                 padding-top: 20px;
             }
             // #side_bar

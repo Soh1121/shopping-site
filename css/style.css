@@ -6,6 +6,10 @@ body {
   body p {
     font-size: 11px;
     font-size: 1.1rem; }
+  body .item-box {
+    background-color: white;
+    padding: 8px;
+    margin-top: 3px; }
   body .sp, body .sp_navi {
     display: none; }
   @media (max-width: 640px) {
@@ -51,10 +55,6 @@ header #header_in {
 .container .row #main .title {
   text-align: center;
   padding-bottom: 15px; }
-.container .row #main .item-box {
-  background-color: white;
-  padding: 8px;
-  margin-top: 3px; }
 .container .row #main table {
   table-layout: auto;
   margin-bottom: 20px; }
@@ -91,13 +91,76 @@ header #header_in {
   margin: 5px 0 0 10px;
   max-width: 90%;
   height: auto; }
+.container .row #sidebar #serch img {
+  padding-left: 10px; }
+.container .row #sidebar #serch .item-box {
+  padding: 20px; }
+.container .row #sidebar #serch .sp, .container .row #sidebar #serch body .sp_navi, body .container .row #sidebar #serch .sp_navi {
+  margin-top: 10px;
+  padding: 20px 20px 25px 20px; }
+  .container .row #sidebar #serch .sp #search-index, .container .row #sidebar #serch body .sp_navi #search-index, body .container .row #sidebar #serch .sp_navi #search-index {
+    position: relative; }
+    .container .row #sidebar #serch .sp #search-index #input, .container .row #sidebar #serch body .sp_navi #search-index #input, body .container .row #sidebar #serch .sp_navi #search-index #input {
+      height: 30px;
+      padding: 0 10px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 240px;
+      border: none;
+      background-color: #eeeeee; }
+      .container .row #sidebar #serch .sp #search-index #input:-moz-placeholder, .container .row #sidebar #serch body .sp_navi #search-index #input:-moz-placeholder, body .container .row #sidebar #serch .sp_navi #search-index #input:-moz-placeholder {
+        color: #b5b5b5; }
+      .container .row #sidebar #serch .sp #search-index #input::-moz-placeholder, .container .row #sidebar #serch body .sp_navi #search-index #input::-moz-placeholder, body .container .row #sidebar #serch .sp_navi #search-index #input::-moz-placeholder {
+        color: #b5b5b5; }
+      .container .row #sidebar #serch .sp #search-index #input:-ms-input-placeholder, .container .row #sidebar #serch body .sp_navi #search-index #input:-ms-input-placeholder, body .container .row #sidebar #serch .sp_navi #search-index #input:-ms-input-placeholder {
+        color: #b5b5b5; }
+      .container .row #sidebar #serch .sp #search-index #input::-webkit-input-placeholder, .container .row #sidebar #serch body .sp_navi #search-index #input::-webkit-input-placeholder, body .container .row #sidebar #serch .sp_navi #search-index #input::-webkit-input-placeholder {
+        color: #b5b5b5; }
+    .container .row #sidebar #serch .sp #search-index #submit, .container .row #sidebar #serch body .sp_navi #search-index #submit, body .container .row #sidebar #serch .sp_navi #search-index #submit {
+      height: 30px;
+      position: absolute;
+      left: 190px;
+      border: none;
+      background-image: url(../images/top/search_icon.png);
+      background-position: center;
+      background-size: 16px;
+      background-repeat: no-repeat; }
+.container .row #sidebar #serch .pc #search-index {
+  position: relative; }
+  .container .row #sidebar #serch .pc #search-index #input {
+    height: 30px;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 170px;
+    border: none;
+    background-color: #eeeeee; }
+    .container .row #sidebar #serch .pc #search-index #input:-moz-placeholder {
+      color: #b5b5b5; }
+    .container .row #sidebar #serch .pc #search-index #input::-moz-placeholder {
+      color: #b5b5b5; }
+    .container .row #sidebar #serch .pc #search-index #input:-ms-input-placeholder {
+      color: #b5b5b5; }
+    .container .row #sidebar #serch .pc #search-index #input::-webkit-input-placeholder {
+      color: #b5b5b5; }
+  .container .row #sidebar #serch .pc #search-index #submit {
+    height: 30px;
+    position: absolute;
+    left: 120px;
+    border: none;
+    background-image: url(../images/top/search_icon.png);
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat; }
 @media (min-width: 641px) {
   .container .row #main {
     padding-top: 20px; }
     .container .row #main p {
       font-size: 12px;
       font-size: 1.2rem; }
-  .container .row #side_bar {
+  .container .row #sidebar {
     padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
