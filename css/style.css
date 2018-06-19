@@ -133,6 +133,35 @@ header #header_in {
     padding-left: 30px;
     padding-top: 10px;
     color: #887f69; }
+.container .row #main #back_next {
+  margin-top: 10px;
+  height: 50px;
+  position: relative; }
+  .container .row #main #back_next #back {
+    position: absolute;
+    width: 121px;
+    height: 40px;
+    background-color: #887f69;
+    display: inline-block;
+    text-align: center;
+    left: 0; }
+  .container .row #main #back_next #next {
+    position: absolute;
+    width: 121px;
+    height: 40px;
+    background-color: #887f69;
+    display: inline-block;
+    text-align: center;
+    right: 0; }
+  .container .row #main #back_next p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: white;
+    text-weight: bold;
+    line-height: 40px;
+    vertical-align: middle; }
+.container .row #main #popular_items {
+  margin-top: 20px; }
 .container .row #sidebar a {
   text-decoration: none; }
 .container .row #sidebar #search img {

@@ -266,6 +266,7 @@ header {
 								left: 10px;
 								top: 11px;
 							}
+							// img
 							
 							p {
 								margin: 0;
@@ -273,6 +274,47 @@ header {
 								padding-top: 10px;
 								color: $brown;
 							}
+							// p
+						}
+						// #breadcrumbs
+						
+						#back_next {
+							margin-top: 10px;
+							height: 50px;
+							position: relative;
+							
+							#back {
+								position: absolute;
+								width: 121px;
+								height: 40px;
+								background-color: $brown;
+								display: inline-block;
+								text-align: center;
+								left: 0;
+							}
+							
+							#next {
+								position: absolute;
+								width: 121px;
+								height: 40px;
+								background-color: $brown;
+								display: inline-block;
+								text-align: center;
+								right: 0;
+							}
+							
+							p {
+								@include fontsize(14);
+								color: white;
+								text-weight: bold;
+								line-height: 40px;
+								vertical-align: middle;
+							}
+						}
+						// #back_next
+						
+						#popular_items {
+							margin-top: 20px;
 						}
 				}
 				// #main
