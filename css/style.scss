@@ -421,6 +421,17 @@ header {
                 }
             }
             // #footer_link
+            
+            #copyright {
+                text-align: center;
+                @include fontsize(10);
+                margin-top: -20px;
+                margin-bottom: 50px;
+                
+                p {
+                    color: $beige;
+                }
+            }
         }
         // footer
     }
@@ -490,6 +501,17 @@ header {
                         @include fontsize(12);
                     }
                 }
+                // #footer_link
+                
+                #copyright {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    
+                    p {
+                        margin-bottom: 5px;
+                    }
+                }
+                // #copyright
             }
         }
     }

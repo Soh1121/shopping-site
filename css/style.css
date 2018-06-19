@@ -222,6 +222,14 @@ header #header_in {
   .container .row footer #footer_link a {
     text-decoration: none;
     color: black; }
+.container .row footer #copyright {
+  text-align: center;
+  font-size: 10px;
+  font-size: 1rem;
+  margin-top: -20px;
+  margin-bottom: 50px; }
+  .container .row footer #copyright p {
+    color: #e2ddd4; }
 @media (min-width: 641px) {
   .container .row #main {
     padding-top: 20px; }
@@ -245,6 +253,11 @@ header #header_in {
     margin-top: 20px; }
     .container .row footer #footer_link a {
       font-size: 12px;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .container .row footer #copyright {
+    margin-top: 0;
+    margin-bottom: 5px; }
+    .container .row footer #copyright p {
+      margin-bottom: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
