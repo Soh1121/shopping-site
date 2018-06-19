@@ -115,6 +115,24 @@ header #header_in {
   margin: 5px 0 0 10px;
   max-width: 90%;
   height: auto; }
+.container .row #main #breadcrumbs {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  height: 34px;
+  background-color: #e2ddd4;
+  position: relative; }
+  .container .row #main #breadcrumbs img {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 11px; }
+  .container .row #main #breadcrumbs p {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: #887f69; }
 .container .row #sidebar a {
   text-decoration: none; }
 .container .row #sidebar #search img {
