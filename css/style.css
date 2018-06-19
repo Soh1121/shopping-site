@@ -211,6 +211,12 @@ header #header_in {
           margin-bottom: 5px;
           font-size: 12px;
           font-size: 1.2rem; }
+.container .row footer #page_top {
+  margin-top: 20px;
+  text-align: center; }
+.container .row footer hr {
+  margin: 20px 0 10px 0;
+  border-top: 1px solid #e2ddd4; }
 @media (min-width: 641px) {
   .container .row #main {
     padding-top: 20px; }
@@ -225,6 +231,8 @@ header #header_in {
       margin-top: -15px;
       padding: 0 5px; }
     .container .row #sidebar .side_contents table tr td .center {
-      text-align: center; } }
+      text-align: center; }
+  .container .row footer #page_top {
+    text-align: right; } }
 
 /*# sourceMappingURL=style.css.map */

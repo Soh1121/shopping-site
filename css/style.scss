@@ -398,6 +398,21 @@ header {
             // .side_contents
         }
         // #side_bar
+        
+        footer {
+            #page_top {
+                margin-top: 20px;
+                text-align: center;
+            }
+            // #page_top
+    
+            hr {
+                margin: 20px 0 10px 0;
+                border-top: 1px solid $beige;
+            }
+            // hr
+        }
+        // footer
     }
     // .row
     
@@ -446,8 +461,14 @@ header {
                 // .side_contents
             }
             // #side_bar
+            
+            footer {
+                #page_top {
+                    text-align: right;
+                }
+            }
         }
     }
     // @media (min-width: 641px)
 }
-
+// .container
