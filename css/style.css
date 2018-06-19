@@ -38,7 +38,31 @@ header #header_in {
     text-align: center;
     padding-top: 10px; }
     header #header_in .row .sp_navi img {
-      padding: 0 5px; } }
+      padding: 0 5px; }
+    header #header_in .row .sp_navi .sp_navi_li {
+      text-align: left;
+      width: 180px;
+      position: absolute;
+      top: 70px;
+      right: 2%;
+      border: 1px solid #f9f8f6;
+      background: white;
+      margin: 0;
+      padding: 0;
+      display: none;
+      z-index: 100; }
+      header #header_in .row .sp_navi .sp_navi_li li {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        header #header_in .row .sp_navi .sp_navi_li li a {
+          font-size: 14px;
+          font-size: 1.4rem;
+          display: block;
+          padding: 10px 8px;
+          border-bottom: 1px solid #f9f8f6;
+          text-decoration: none;
+          color: #887f69; } }
 
 .container .row #main .owl-theme .owl-dots {
   margin-top: 0;
