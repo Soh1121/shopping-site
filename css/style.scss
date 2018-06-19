@@ -411,6 +411,16 @@ header {
                 border-top: 1px solid $beige;
             }
             // hr
+            
+            #footer_link {
+                text-align: center;
+                
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            // #footer_link
         }
         // footer
     }
@@ -465,6 +475,20 @@ header {
             footer {
                 #page_top {
                     text-align: right;
+                }
+                // #page_top
+                
+                hr {
+                    border-top: 1px solid $brown;
+                }
+                // hr
+                
+                #footer_link {
+                    margin-top: 20px;
+                    
+                    a {
+                        @include fontsize(12);
+                    }
                 }
             }
         }

@@ -217,6 +217,11 @@ header #header_in {
 .container .row footer hr {
   margin: 20px 0 10px 0;
   border-top: 1px solid #e2ddd4; }
+.container .row footer #footer_link {
+  text-align: center; }
+  .container .row footer #footer_link a {
+    text-decoration: none;
+    color: black; }
 @media (min-width: 641px) {
   .container .row #main {
     padding-top: 20px; }
@@ -233,6 +238,13 @@ header #header_in {
     .container .row #sidebar .side_contents table tr td .center {
       text-align: center; }
   .container .row footer #page_top {
-    text-align: right; } }
+    text-align: right; }
+  .container .row footer hr {
+    border-top: 1px solid #887f69; }
+  .container .row footer #footer_link {
+    margin-top: 20px; }
+    .container .row footer #footer_link a {
+      font-size: 12px;
+      font-size: 1.2rem; } }
 
 /*# sourceMappingURL=style.css.map */
