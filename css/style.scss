@@ -310,7 +310,7 @@ header {
                 }
             }
             
-            #side_contents {
+            .side_contents {
                 margin-top: 10px;
                 position: relative;
                 
@@ -326,39 +326,76 @@ header {
                 }
                 // h3
                 
-                img {
+                .right {
                     display: block;
                     position: absolute;
                     
                     top: 15.5px;
                     right: 10px;
                 }
-                // img
+                // right
                 
-                li {
-                    @include fontsize(12);
-                    list-style: none;
-                    border-bottom: 2px solid $background;
+                ul {
                     margin: 0;
-                    padding-left: 10px;
-                    background-color: white;
-                    height: 45px;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
                     
-                    img {
-                        display: inline-block;
-                        position: absolute;
-                        right: 10px;
+                    li {
+                        @include fontsize(12);
+                        list-style: none;
+                        border-bottom: 2px solid $background;
+                        margin: 0;
+                        padding-left: 10px;
+                        background-color: white;
+                        height: 45px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                    
+                        img {
+                            display: inline-block;
+                            position: absolute;
+                            right: 10px;
+                        }
+                        // img
+                    
+                        a {
+                            color: black;
+                        }
+                        // a
                     }
+                    //li
+                }
+                // ul
+                
+                table {
+                    table-layout: auto;
+                    margin: 0;
                     
-                    a {
-                        color: black;
+                    tbody {
+                        background-color: white;
+                        td {
+                            border: none;
+                            width: 50%;
+                            padding: 5px 5px 5px 0;
+                            
+                            .photo {
+                                img {
+                                    margin: 7px;
+                                    width: 95%;
+                                }
+                            }
+                            
+                            p {
+                                padding-top: 5px;
+                                padding-left: 3px;
+                                margin-bottom: 5px;
+                                @include fontsize(12);
+                            }
+                        }
                     }
                 }
+                // table
             }
-            // #page_link
+            // .side_contents
         }
         // #side_bar
     }
@@ -383,6 +420,30 @@ header {
                         padding: 10px 20px 20px 20px;
                     }
                 }
+                // #search
+                
+                .side_contents {
+                    table {
+                        tr {
+                            td {
+                                p {
+                                    margin-top: -15px;
+                                    padding: 0 5px;
+                                }
+                                // p
+                            
+                                .center {
+                                    text-align: center;
+                                }
+                                // center
+                            }
+                            // td
+                        }
+                        // tr
+                    }
+                    // table
+                }
+                // .side_contents
             }
             // #side_bar
         }
