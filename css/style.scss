@@ -330,7 +330,7 @@ header {
 								margin-bottom: 0;
 								width: 86%;
 								
-								border-top: 2px solid #e3e8cf;
+								border-top: 1px solid #e3e8cf;
 							}
 							
 							ul {
@@ -399,6 +399,31 @@ header {
 								}
 							}
 							
+							#price {
+								margin: 10px 0;
+								
+								p {
+									@include fontsize(14);
+									
+									padding-left: 20%;
+
+									.yen {
+										@include fontsize(14);
+										color: #e80f66;
+										font-style: oblique;
+									}
+									
+									.number {
+										@include fontsize(22);
+										color: #e80f66;
+										font-style: oblique;
+									}
+								}
+							}
+							
+							.inline {
+								display: inline;
+							}
 						}
 						
 						#popular_items {

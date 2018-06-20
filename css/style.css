@@ -171,7 +171,7 @@ header #header_in {
     margin-left: 7%;
     margin-bottom: 0;
     width: 86%;
-    border-top: 2px solid #e3e8cf; }
+    border-top: 1px solid #e3e8cf; }
   .container .row #main #products ul {
     margin-left: 7%;
     margin-right: 7%;
@@ -220,6 +220,24 @@ header #header_in {
     margin-top: 7px;
     margin-left: 7%;
     margin-bottom: 7px; }
+  .container .row #main #products #price {
+    margin: 10px 0; }
+    .container .row #main #products #price p {
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding-left: 20%; }
+      .container .row #main #products #price p .yen {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #e80f66;
+        font-style: oblique; }
+      .container .row #main #products #price p .number {
+        font-size: 22px;
+        font-size: 2.2rem;
+        color: #e80f66;
+        font-style: oblique; }
+  .container .row #main #products .inline {
+    display: inline; }
 .container .row #main #popular_items {
   margin-top: 20px; }
 .container .row #sidebar a {
