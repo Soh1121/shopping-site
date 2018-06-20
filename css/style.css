@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 body {
   background: #f9f8f6; }
   body p {
@@ -154,24 +157,21 @@ header #header_in {
     margin-bottom: 0;
     padding-top: 10px;
     letter-spacing: 0.1em; }
-  .container .row #main #products #number {
-    font-size: 10px;
-    font-size: 1rem;
-    color: #a6a6a6;
+  .container .row #main #products h3 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #887f69;
+    font-weight: bold;
+    margin-top: 10px;
     margin-left: 7%;
-    margin-bottom: 0;
-    padding-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: 0.05em; }
   .container .row #main #products hr {
     margin-top: 0;
     margin-left: 7%;
     margin-bottom: 0;
     width: 86%;
     border-top: 2px solid #e3e8cf; }
-  .container .row #main #products #display_img img {
-    width: 86%;
-    margin-top: 7px;
-    margin-left: 7%;
-    margin-bottom: 7px; }
   .container .row #main #products ul {
     margin-left: 7%;
     margin-right: 7%;
@@ -184,6 +184,42 @@ header #header_in {
       .container .row #main #products ul li img {
         width: 51px;
         cursor: pointer; }
+  .container .row #main #products table {
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #887f69;
+    border: solid 1px #e2ddd4;
+    margin-left: 7%;
+    margin-bottom: 10px;
+    width: 86%; }
+    .container .row #main #products table th {
+      background: #f9f8f6;
+      border: solid 1px #e2ddd4;
+      text-align: center;
+      padding: 10px; }
+    .container .row #main #products table td {
+      border: solid 1px #e2ddd4;
+      text-align: center;
+      position: relative; }
+      .container .row #main #products table td input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto; }
+  .container .row #main #products #number {
+    font-size: 10px;
+    font-size: 1rem;
+    color: #a6a6a6;
+    margin-left: 7%;
+    margin-bottom: 0;
+    padding-bottom: 10px; }
+  .container .row #main #products #display_img img {
+    width: 86%;
+    margin-top: 7px;
+    margin-left: 7%;
+    margin-bottom: 7px; }
 .container .row #main #popular_items {
   margin-top: 20px; }
 .container .row #sidebar a {
