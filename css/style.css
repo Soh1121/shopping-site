@@ -221,7 +221,8 @@ header #header_in {
     margin-left: 7%;
     margin-bottom: 7px; }
   .container .row #main #products #price {
-    margin: 10px 0; }
+    margin: 10px 0;
+    vertical-align: middle; }
     .container .row #main #products #price p {
       font-size: 14px;
       font-size: 1.4rem;
@@ -236,6 +237,14 @@ header #header_in {
         font-size: 2.2rem;
         color: #e80f66;
         font-style: oblique; }
+  .container .row #main #products #quantity {
+    margin: 10px 0;
+    vertical-align: middle; }
+    .container .row #main #products #quantity textarea {
+      display: inline-block;
+      min-height: 24px;
+      width: 40%;
+      margin-left: 20%; }
   .container .row #main #products .inline {
     display: inline; }
 .container .row #main #popular_items {
