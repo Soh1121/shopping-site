@@ -164,11 +164,13 @@ header #header_in {
     font-weight: bold;
     margin-top: 10px;
     margin-left: 7%;
+    margin-right: 7%;
     margin-bottom: 10px;
     letter-spacing: 0.05em; }
   .container .row #main #products hr {
     margin-top: 0;
     margin-left: 7%;
+    margin-right: 7%;
     margin-bottom: 0;
     width: 86%;
     border-top: 1px solid #e3e8cf; }
@@ -226,7 +228,7 @@ header #header_in {
     .container .row #main #products #price p {
       font-size: 14px;
       font-size: 1.4rem;
-      padding-left: 20%; }
+      padding-left: 15%; }
       .container .row #main #products #price p .yen {
         font-size: 14px;
         font-size: 1.4rem;
@@ -244,7 +246,26 @@ header #header_in {
       display: inline-block;
       min-height: 24px;
       width: 40%;
-      margin-left: 20%; }
+      margin-left: 15%; }
+  .container .row #main #products #cart_btn {
+    margin: 15px 0;
+    text-align: center; }
+  .container .row #main #products #description {
+    padding-bottom: 20px; }
+    .container .row #main #products #description hr {
+      border-top: 1px solid #887f69;
+      margin-right: 6%;
+      margin-left: 6%; }
+    .container .row #main #products #description h3 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      margin-right: 6%;
+      margin-left: 6%; }
+    .container .row #main #products #description p {
+      font-size: 14px;
+      font-size: 1.4rem;
+      margin-right: 6%;
+      margin-left: 6%; }
   .container .row #main #products .inline {
     display: inline; }
 .container .row #main #popular_items {

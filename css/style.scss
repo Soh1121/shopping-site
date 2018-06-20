@@ -315,6 +315,7 @@ header {
 								
 								margin-top: 10px;
 								margin-left: 7%;
+								margin-right: 7%;
 								margin-bottom: 10px;
 								
 								letter-spacing: 0.05em;
@@ -327,6 +328,7 @@ header {
 							hr {
 								margin-top: 0;
 								margin-left: 7%;
+								margin-right: 7%;
 								margin-bottom: 0;
 								width: 86%;
 								
@@ -406,7 +408,7 @@ header {
 								p {
 									@include fontsize(14);
 									
-									padding-left: 20%;
+									padding-left: 15%;
 
 									.yen {
 										@include fontsize(14);
@@ -430,7 +432,34 @@ header {
 									display: inline-block;
 									min-height: 24px;
 									width: 40%;
-									margin-left: 20%;
+									margin-left: 15%;
+								}
+							}
+							
+							#cart_btn {
+								margin: 15px 0;
+								text-align: center;
+							}
+							
+							#description {
+								padding-bottom: 20px;
+
+								hr {
+									border-top: 1px solid $brown;
+									margin-right: 6%;
+									margin-left: 6%;
+								}
+								
+								h3 {
+									@include fontsize(16);
+									margin-right: 6%;
+									margin-left: 6%;
+								}
+								
+								p {
+									@include fontsize(14);
+									margin-right: 6%;
+									margin-left: 6%;
 								}
 							}
 							
