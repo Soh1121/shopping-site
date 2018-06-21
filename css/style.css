@@ -158,15 +158,11 @@ header #header_in {
     padding-top: 10px;
     letter-spacing: 0.1em; }
   .container .row #main #products h3 {
-    font-size: 14px;
-    font-size: 1.4rem;
-    color: #887f69;
-    font-weight: bold;
+    display: inline-block;
     margin-top: 10px;
     margin-left: 7%;
     margin-right: 7%;
-    margin-bottom: 10px;
-    letter-spacing: 0.05em; }
+    margin-bottom: 10px; }
   .container .row #main #products hr {
     margin-top: 0;
     margin-left: 7%;

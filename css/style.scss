@@ -309,20 +309,12 @@ header {
 							}
 							
 							h3 {
-								@include fontsize(14);
-								color: $brown;
-								font-weight: bold;
-								
+								display: inline-block;
+
 								margin-top: 10px;
 								margin-left: 7%;
 								margin-right: 7%;
 								margin-bottom: 10px;
-								
-								letter-spacing: 0.05em;
-							}
-							
-							p {
-							
 							}
 							
 							hr {
@@ -718,6 +710,8 @@ header {
 								p {
 										@include fontsize(12);
 								}
+								
+								
 						}
 						// #main
 						
