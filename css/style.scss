@@ -206,6 +206,11 @@ header {
 														margin: 5px 0;
 												}
 												// p
+												
+												a {
+													color: black;
+													text-decoration: none;
+												}
 										}
 										// td
 								}
@@ -463,11 +468,16 @@ header {
 						#popular_items {
 							margin-top: 20px;
 						}
+						
+						#recent_items {
+							margin-top: 20px;
+						}
 				}
 				// #main
 				
 				#sidebar {
 						a {
+								color: black;
 								text-decoration: none;
 						}
 						
@@ -697,6 +707,11 @@ header {
 				padding-left: 30px;
 				padding-top: 10px;
 				color: $brown;
+				
+				a {
+					color: $brown;
+					text-decoration: none;
+				}
 			}
 			// p
 		}
@@ -713,10 +728,6 @@ header {
 								
 								#products_pc {
 									background-color: white;
-									
-									hr {
-										border-top: 1px solid #e3e8cf;
-									}
 									
 									#products_title {
 										h2 {
@@ -740,6 +751,7 @@ header {
 										hr {
 											margin-bottom: 10px;
 											clear: both;
+											border-top: 1px solid #e3e8cf;
 										}
 										
 									}
@@ -795,6 +807,7 @@ header {
 										
 										hr {
 											margin: 10px 0;
+											border-top: 1px solid #e3e8cf;
 										}
 										// hr
 									}
@@ -822,6 +835,7 @@ header {
 												text-align: center;
 												padding: 10px;
 											}
+											// th
 											
 											td {
 												border: solid 1px $beige;
@@ -836,14 +850,18 @@ header {
 													left: 0;
 													margin: auto;
 												}
+												// input
 											}
+											// td
 										}
+										// table
 									}
 									// products_color
 									
 									#products_price_quantity {
 										hr {
 											margin: 15px 0;
+											border-top: 1px solid #e3e8cf;
 										}
 										// hr
 										
@@ -888,6 +906,77 @@ header {
 										img {
 											width: 100%;
 										}
+									}
+									// #products_cart
+									
+									#products_description {
+										hr {
+											margin: 0;
+											margin-bottom: 20px;
+											border-top: 1px solid #e3e8cf;
+										}
+										// hr
+										
+										h3 {
+											@include fontsize(16);
+											color: $brown;
+											font-weight: bold;
+											letter-spacing: 0.5em;
+										}
+										// h3
+										
+										table {
+											@include fontsize(12);
+											color: $brown;
+											border: solid 1px $beige;
+											
+											margin-bottom: 70px;
+											width: 100%;
+											
+											th {
+												background: $background;
+												border: solid 1px $beige;
+												text-align: center;
+												padding: 10px;
+											}
+											// th
+											
+											td {
+												border: solid 1px $beige;
+												position: relative;
+												padding-left: 10px;
+												
+												input {
+													position: absolute;
+													top: 0;
+													right: 0;
+													bottom: 0;
+													left: 0;
+													margin: auto;
+												}
+												// input
+											}
+											// td
+											}
+										// table
+										
+										#description {
+											hr {
+												border-top: 1px solid $brown;
+											}
+											// hr
+											
+											h3 {
+												letter-spacing: 0.05em;
+											}
+											// h3
+											
+											p {
+												@include fontsize(14);
+											}
+											// p
+										}
+										// #description
 									}
 								}
 								// #products_pc

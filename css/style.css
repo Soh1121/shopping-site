@@ -94,6 +94,9 @@ header #header_in {
       width: 100%; }
     .container .row #main table tbody td p {
       margin: 5px 0; }
+    .container .row #main table tbody td a {
+      color: black;
+      text-decoration: none; }
   .container .row #main table h3 {
     font-size: 16px;
     font-size: 1.6rem; }
@@ -266,7 +269,10 @@ header #header_in {
     display: inline; }
 .container .row #main #popular_items {
   margin-top: 20px; }
+.container .row #main #recent_items {
+  margin-top: 20px; }
 .container .row #sidebar a {
+  color: black;
   text-decoration: none; }
 .container .row #sidebar #search img {
   padding-left: 10px; }
@@ -423,6 +429,9 @@ header #header_in {
     padding-left: 30px;
     padding-top: 10px;
     color: #887f69; }
+    .container #breadcrumbs p a {
+      color: #887f69;
+      text-decoration: none; }
 @media (min-width: 551px) {
   .container .row #main {
     padding-top: 20px; }
@@ -431,8 +440,6 @@ header #header_in {
       font-size: 1.2rem; }
     .container .row #main #products_pc {
       background-color: white; }
-      .container .row #main #products_pc hr {
-        border-top: 1px solid #e3e8cf; }
       .container .row #main #products_pc #products_title h2 {
         font-size: 14px;
         font-size: 1.4rem;
@@ -448,7 +455,8 @@ header #header_in {
         float: right; }
       .container .row #main #products_pc #products_title hr {
         margin-bottom: 10px;
-        clear: both; }
+        clear: both;
+        border-top: 1px solid #e3e8cf; }
       .container .row #main #products_pc #products_img table tr th {
         width: 64.2%;
         padding: 0 5px 2px 0;
@@ -472,7 +480,8 @@ header #header_in {
               width: 100%;
               cursor: pointer; }
       .container .row #main #products_pc #products_img hr {
-        margin: 10px 0; }
+        margin: 10px 0;
+        border-top: 1px solid #e3e8cf; }
       .container .row #main #products_pc #products_color h3 {
         margin: 0; }
         .container .row #main #products_pc #products_color h3 img {
@@ -501,7 +510,8 @@ header #header_in {
             left: 0;
             margin: auto; }
       .container .row #main #products_pc #products_price_quantity hr {
-        margin: 15px 0; }
+        margin: 15px 0;
+        border-top: 1px solid #e3e8cf; }
       .container .row #main #products_pc #products_price_quantity h3 {
         margin: 0;
         line-height: 1rem;
@@ -528,6 +538,46 @@ header #header_in {
         padding-top: 15px; }
         .container .row #main #products_pc #products_cart img {
           width: 100%; }
+      .container .row #main #products_pc #products_description hr {
+        margin: 0;
+        margin-bottom: 20px;
+        border-top: 1px solid #e3e8cf; }
+      .container .row #main #products_pc #products_description h3 {
+        font-size: 16px;
+        font-size: 1.6rem;
+        color: #887f69;
+        font-weight: bold;
+        letter-spacing: 0.5em; }
+      .container .row #main #products_pc #products_description table {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: #887f69;
+        border: solid 1px #e2ddd4;
+        margin-bottom: 70px;
+        width: 100%; }
+        .container .row #main #products_pc #products_description table th {
+          background: #f9f8f6;
+          border: solid 1px #e2ddd4;
+          text-align: center;
+          padding: 10px; }
+        .container .row #main #products_pc #products_description table td {
+          border: solid 1px #e2ddd4;
+          position: relative;
+          padding-left: 10px; }
+          .container .row #main #products_pc #products_description table td input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto; }
+      .container .row #main #products_pc #products_description #description hr {
+        border-top: 1px solid #887f69; }
+      .container .row #main #products_pc #products_description #description h3 {
+        letter-spacing: 0.05em; }
+      .container .row #main #products_pc #products_description #description p {
+        font-size: 14px;
+        font-size: 1.4rem; }
   .container .row #sidebar {
     padding-top: 20px; }
     .container .row #sidebar #search .item-box {
