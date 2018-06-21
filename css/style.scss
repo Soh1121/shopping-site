@@ -488,7 +488,7 @@ header {
 												position: relative;
 										
 										
-												#input {
+												#keyword_input {
 														height: 30px;
 														padding: 0 10px;
 														position: absolute;
@@ -503,7 +503,7 @@ header {
 														}
 												}
 										
-												#submit {
+												#submit_btn {
 														height: 30px;
 														position: absolute;
 														right: -10px;
@@ -521,7 +521,7 @@ header {
 										#search-index {
 												position: relative;
 										
-												#input {
+												#keyword_input {
 														height: 30px;
 														padding: 0 10px;
 														position: absolute;
@@ -536,7 +536,7 @@ header {
 														}
 												}
 										
-												#submit {
+												#submit_btn {
 														height: 30px;
 														position: absolute;
 														right: -10px;
@@ -738,10 +738,12 @@ header {
 										}
 										
 										hr {
+											margin-bottom: 10px;
 											clear: both;
 										}
 										
 									}
+									// #products_title
 									
 									#products_img {
 										table {
@@ -779,16 +781,62 @@ header {
 																width: 100%;
 																cursor: pointer;
 															}
+															// img
 														}	
+														// li
 													}
+													// ul
 												}
 												// td
 											}
 											// tr
 										}
 										// table
+										
+										hr {
+											margin: 10px 0;
+										}
+										// hr
 									}
 									// #products_img
+									
+									#products_color {
+										img {
+											margin: 10px 0;
+										}
+										
+										table {
+											@include fontsize(12);
+											color: $brown;
+											border: solid 1px $beige;
+											
+											margin-bottom: 10px;
+											width: 100%;
+											
+											th {
+												background: $background;
+												border: solid 1px $beige;
+												text-align: center;
+												padding: 10px;
+											}
+											
+											td {
+												border: solid 1px $beige;
+												text-align: center;
+												position: relative;
+												
+												input {
+													position: absolute;
+													top: 0;
+													right: 0;
+													bottom: 0;
+													left: 0;
+													margin: auto;
+												}
+											}
+										}
+									}
+									// products_color
 								}
 								// #products_pc
 						}
