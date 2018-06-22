@@ -69,18 +69,33 @@ header {
 				padding-bottom: 10px;
 				
 				.row {
-						position: relative;
-						.pc_navi {
-								position: absolute;
-								bottom: 0;
-								right: 0;
+						//position: relative;
+						#pc_navi {
+							position: relative;
+							height: 46.5px;
+							.pc_navi_li {
+									position: absolute;
+									bottom: 0;
+									right: 0;
+									
+									margin: 0;
+									padding: 0;
 
-								img {
-										padding: 0 5px;
-								}
-								// img
+									li {
+										display: inline;
+										list-style: none;
+										margin: 5px 0 0 0;
+										padding: 0;
+										
+										a {
+											float: left;
+											padding-right: 10px;
+										}
+									}
+							}
+							// .pc_navi_li
 						}
-						// .pc_navi
+						// #pc_navi
 				}
 				// .row
 		}
@@ -90,7 +105,7 @@ header {
 				#header_in {
 						
 						.row {
-								.pc_navi {
+								#pc_navi {
 										display: none;
 								}
 								// .pc_navi
@@ -183,6 +198,10 @@ header {
 						}
 						// .title
 						
+						#category_items {
+							margin-right: -3px;
+						}
+						
 						table {
 								table-layout: auto;
 								margin-bottom: 20px;
@@ -223,6 +242,12 @@ header {
 						}
 						// table
 						
+						#sub_cover {
+							img {
+								width: 100%;
+							}
+						}
+						
 						#shopping_guide {
 								h3 {
 										@include fontsize(16);
@@ -251,6 +276,10 @@ header {
 								// p
 
 								.item-box{
+										display: inline-block;
+										vertical-align: top;
+										width: 95%;
+									
 										img {
 												margin: 5px 0 0 10px;
 												max-width: 90%;
@@ -259,6 +288,10 @@ header {
 										// img
 								}
 								// .item-box
+								
+								#guide_box {
+									width: 100%;
+								}
 						}
 						// #shopping_guide
 						
@@ -337,13 +370,15 @@ header {
 								margin-right: 7%;
 								margin-bottom: 5px;
 								text-align: center;
+								width: 86%;
 								li {
 									margin: 0;
 									list-style: none;
 									display: inline-block;
+									width: 18.7%;
 									
 									img {
-										width: 51px;
+										width: 100%;
 										cursor: pointer;
 									}
 								}	
@@ -449,6 +484,9 @@ header {
 								
 								h3 {
 									@include fontsize(16);
+									color: $brown;
+									font-weight: bold;
+									letter-spacing: 0.1em;
 									margin-right: 6%;
 									margin-left: 6%;
 								}
@@ -724,6 +762,15 @@ header {
 								
 								p {
 										@include fontsize(12);
+								}
+								
+								#shopping_guide {
+									.item-box {
+										// width: 46%;
+									}
+									.right {
+										margin-right: 1.5%;
+									}
 								}
 								
 								#products_pc {

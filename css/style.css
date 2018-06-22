@@ -25,16 +25,25 @@ body {
 header #header_in {
   padding-top: 20px;
   padding-bottom: 10px; }
-  header #header_in .row {
-    position: relative; }
-    header #header_in .row .pc_navi {
+  header #header_in .row #pc_navi {
+    position: relative;
+    height: 46.5px; }
+    header #header_in .row #pc_navi .pc_navi_li {
       position: absolute;
       bottom: 0;
-      right: 0; }
-      header #header_in .row .pc_navi img {
-        padding: 0 5px; }
+      right: 0;
+      margin: 0;
+      padding: 0; }
+      header #header_in .row #pc_navi .pc_navi_li li {
+        display: inline;
+        list-style: none;
+        margin: 5px 0 0 0;
+        padding: 0; }
+        header #header_in .row #pc_navi .pc_navi_li li a {
+          float: left;
+          padding-right: 10px; }
 @media (max-width: 549px) {
-  header #header_in .row .pc_navi {
+  header #header_in .row #pc_navi {
     display: none; }
   header #header_in .row .sp_navi {
     display: block;
@@ -82,6 +91,8 @@ header #header_in {
 .container .row #main .title {
   text-align: center;
   padding-bottom: 15px; }
+.container .row #main #category_items {
+  margin-right: -3px; }
 .container .row #main table {
   table-layout: auto;
   margin-bottom: 20px; }
@@ -100,6 +111,8 @@ header #header_in {
   .container .row #main table h3 {
     font-size: 16px;
     font-size: 1.6rem; }
+.container .row #main #sub_cover img {
+  width: 100%; }
 .container .row #main #shopping_guide h3 {
   font-size: 16px;
   font-size: 1.6rem;
@@ -117,10 +130,16 @@ header #header_in {
     font-size: 2rem; }
 .container .row #main #shopping_guide p {
   margin: 0 0 5px 10px; }
-.container .row #main #shopping_guide .item-box img {
-  margin: 5px 0 0 10px;
-  max-width: 90%;
-  height: auto; }
+.container .row #main #shopping_guide .item-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 95%; }
+  .container .row #main #shopping_guide .item-box img {
+    margin: 5px 0 0 10px;
+    max-width: 90%;
+    height: auto; }
+.container .row #main #shopping_guide #guide_box {
+  width: 100%; }
 .container .row #main #back_next {
   margin-top: 10px;
   height: 50px;
@@ -177,13 +196,15 @@ header #header_in {
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 5px;
-    text-align: center; }
+    text-align: center;
+    width: 86%; }
     .container .row #main #products_sp ul li {
       margin: 0;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      width: 18.7%; }
       .container .row #main #products_sp ul li img {
-        width: 51px;
+        width: 100%;
         cursor: pointer; }
   .container .row #main #products_sp table {
     font-size: 12px;
@@ -258,6 +279,9 @@ header #header_in {
     .container .row #main #products_sp #description h3 {
       font-size: 16px;
       font-size: 1.6rem;
+      color: #887f69;
+      font-weight: bold;
+      letter-spacing: 0.1em;
       margin-right: 6%;
       margin-left: 6%; }
     .container .row #main #products_sp #description p {
@@ -438,6 +462,8 @@ header #header_in {
     .container .row #main p {
       font-size: 12px;
       font-size: 1.2rem; }
+    .container .row #main #shopping_guide .right {
+      margin-right: 1.5%; }
     .container .row #main #products_pc {
       background-color: white; }
       .container .row #main #products_pc #products_title h2 {
