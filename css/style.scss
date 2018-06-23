@@ -249,49 +249,67 @@ header {
 						}
 						
 						#shopping_guide {
-								h3 {
-										@include fontsize(16);
-										font-weight: bold;
-										color: $brown;
-										margin: 10px;
-								}
-								// h3
+							
+							h3 {
+									@include fontsize(16);
+									font-weight: bold;
+									color: $brown;
+									margin: 10px;
+									padding: 0 10px 0 10px;
+							}
+							// h3
 
-								h4 {
-										@include fontsize(12);
-										font-weight: bold;
-										color: $brown;
-										margin: 0 0 0 10px;
-										
-										span {
-												@include fontsize(20);
-										}
-										// span
-								}
-								// h4
-								
-								p {
-										margin: 0 0 5px 10px;
-								}
-								// p
-
-								.item-box{
-										display: inline-block;
-										vertical-align: top;
-										width: 95%;
+							h4 {
+									@include fontsize(12);
+									font-weight: bold;
+									color: $brown;
+									margin: 0 0 0 10px;
+									padding: 0 10px 0 10px;
 									
+									span {
+											@include fontsize(20);
+									}
+									// span
+							}
+							// h4
+							
+							p {
+									margin: 0 0 5px 10px;
+									padding: 0 10px 0 10px;
+							}
+							// p
+							
+							.shopping_guide_ul {
+								margin: 0;
+								padding: 0;
+								
+								li {
+									list-style: none;
+									margin: 0;
+									padding: 0;
+									width: 100%;
+									
+									.item-box {
+										display: inline-block;
+										margin-top: 5px;
+										padding: 10px 0 20px 0;
+										padding-bottom: 20px;
+										width: 100%;
+										
 										img {
-												margin: 5px 0 0 10px;
-												max-width: 90%;
-												height: auto;
+											margin: 5px 0 0 10px;
+											padding: 0 10px 0 10px;
+											max-width: 90%;
+											height: auto;
 										}
 										// img
+									}
 								}
-								// .item-box
-								
-								#guide_box {
-									width: 100%;
-								}
+							}
+							
+							#guide_box {
+								width: 100%;
+							}
 						}
 						// #shopping_guide
 						
@@ -717,7 +735,7 @@ header {
 								margin-bottom: 50px;
 								
 								p {
-										color: $beige;
+										color: #b8b4ac;
 								}
 						}
 				}
@@ -765,11 +783,16 @@ header {
 								}
 								
 								#shopping_guide {
-									.item-box {
-										// width: 46%;
-									}
-									.right {
-										margin-right: 1.5%;
+									.shopping_guide_ul {
+										width: 100%;
+										li {
+											display: inline-block;
+											vertical-align: top;
+											width: 49.5%;
+											.item-box {
+												// width: 49%;
+											}
+										}
 									}
 								}
 								

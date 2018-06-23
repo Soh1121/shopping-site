@@ -118,26 +118,40 @@ header #header_in {
   font-size: 1.6rem;
   font-weight: bold;
   color: #887f69;
-  margin: 10px; }
+  margin: 10px;
+  padding: 0 10px 0 10px; }
 .container .row #main #shopping_guide h4 {
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: bold;
   color: #887f69;
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 10px;
+  padding: 0 10px 0 10px; }
   .container .row #main #shopping_guide h4 span {
     font-size: 20px;
     font-size: 2rem; }
 .container .row #main #shopping_guide p {
-  margin: 0 0 5px 10px; }
-.container .row #main #shopping_guide .item-box {
-  display: inline-block;
-  vertical-align: top;
-  width: 95%; }
-  .container .row #main #shopping_guide .item-box img {
-    margin: 5px 0 0 10px;
-    max-width: 90%;
-    height: auto; }
+  margin: 0 0 5px 10px;
+  padding: 0 10px 0 10px; }
+.container .row #main #shopping_guide .shopping_guide_ul {
+  margin: 0;
+  padding: 0; }
+  .container .row #main #shopping_guide .shopping_guide_ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    .container .row #main #shopping_guide .shopping_guide_ul li .item-box {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 10px 0 20px 0;
+      padding-bottom: 20px;
+      width: 100%; }
+      .container .row #main #shopping_guide .shopping_guide_ul li .item-box img {
+        margin: 5px 0 0 10px;
+        padding: 0 10px 0 10px;
+        max-width: 90%;
+        height: auto; }
 .container .row #main #shopping_guide #guide_box {
   width: 100%; }
 .container .row #main #back_next {
@@ -434,7 +448,7 @@ header #header_in {
   margin-top: -20px;
   margin-bottom: 50px; }
   .container .row footer #copyright p {
-    color: #e2ddd4; }
+    color: #b8b4ac; }
 .container #breadcrumbs {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -462,8 +476,12 @@ header #header_in {
     .container .row #main p {
       font-size: 12px;
       font-size: 1.2rem; }
-    .container .row #main #shopping_guide .right {
-      margin-right: 1.5%; }
+    .container .row #main #shopping_guide .shopping_guide_ul {
+      width: 100%; }
+      .container .row #main #shopping_guide .shopping_guide_ul li {
+        display: inline-block;
+        vertical-align: top;
+        width: 49.5%; }
     .container .row #main #products_pc {
       background-color: white; }
       .container .row #main #products_pc #products_title h2 {
